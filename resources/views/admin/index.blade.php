@@ -65,23 +65,6 @@
         </div>
     </div>
 
-    <!-- Total Tim Audit -->
-    <div class="bg-white rounded-2xl shadow-lg p-6 card-hover border border-gray-100">
-        <div class="flex items-center justify-between">
-            <div>
-                <p class="text-sm font-medium text-gray-500 mb-1">Tim Audit</p>
-                <h3 class="text-3xl font-bold text-gray-800"></h3>
-            </div>
-            <div
-                class="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center shadow-lg">
-                <i class="fas fa-user-tie text-white text-2xl"></i>
-            </div>
-        </div>
-        <div class="mt-4 flex items-center text-sm">
-            <span class="text-blue-500 font-medium"><i class="fas fa-clipboard-check mr-1"></i>Tersedia</span>
-            <span class="text-gray-400 ml-2">Tim aktif</span>
-        </div>
-    </div>
 </div>
 
 @endsection
