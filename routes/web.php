@@ -133,9 +133,9 @@ Route::middleware(['auth'])->group(function () {
         Route::get('lokasi/{lokasi}/add-pegawai', [LokasiController::class, 'addPegawai'])->name('lokasi.add-pegawai');
         Route::post('lokasi/{lokasi}/store-pegawai', [LokasiController::class, 'storePegawai'])->name('lokasi.store-pegawai');
         Route::delete('lokasi/{lokasi}/remove-pegawai/{pegawai}', [LokasiController::class, 'removePegawai'])->name('lokasi.remove-pegawai');
-    });
 
-    // Laporan routes (accessible by all authenticated users)
-    Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index');
-    Route::post('/laporan/export/pdf', [LaporanController::class, 'exportPdf'])->name('laporan.export.pdf');
+        // Laporan routes
+        Route::get('laporan', [LaporanController::class, 'index'])->name('laporan.index');
+        Route::match(['get', 'post'], 'laporan/export/pdf', [LaporanController::class, 'exportPdf'])->name('laporan.export.pdf');
+    });
 });

@@ -63,11 +63,11 @@
     
     <!-- Common Menu -->
     <li>
-        <a href="{{ route('laporan.index') }}"
-            class="sidebar-gradient-hover @if(request()->routeIs('laporan.*')) active @endif flex items-center p-3 rounded-lg text-gray-700 font-medium relative">
+        <a href="{{ route('admin.laporan.index') }}"
+            class="sidebar-gradient-hover @if(request()->routeIs('admin.laporan.*')) active @endif flex items-center p-3 rounded-lg text-gray-700 font-medium relative">
             <i class="fas fa-file-alt w-5 text-purple-600"></i>
             <span class="ml-3">Laporan</span>
-            @if(request()->routeIs('laporan.*'))
+            @if(request()->routeIs('admin.laporan.*'))
             <i class="fas fa-chevron-right ml-auto text-purple-600"></i>
             @else
             <i class="fas fa-chevron-right ml-auto text-gray-400"></i>
